@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mystic.thither.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "thither.refmap.json",
+  "mixins": [
+    "NoiseChunkAccess",
+    "StructureManagerAccess",
+    "EclipseRawBrightnessMixin",
+    "EclipseSeaFluidMixin",
+    "EclipsePlacementMixin",
+    "EclipseBucketMixin"
+  ],
+  "client": [
+    "EclipseCloudColorMixin",
+    "EclipseLightmapMixin",
+    "EclipseSkyBrightnessMixin",
+    "EclipseDebugLightMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

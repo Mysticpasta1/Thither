@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "eclipse:nyx_folium",
-    "eclipse:sol_folium",
-    "eclipse:lux_folium"
+    "thither:nyx_leaves",
+    "thither:sol_leaves",
+    "thither:lux_leaves"
   ]
 }

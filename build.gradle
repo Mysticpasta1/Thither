@@ -56,8 +56,8 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 mixin {
-    add sourceSets.main, 'eclipse.refmap.json'
-    config 'eclipse.mixins.json'
+    add sourceSets.main, 'thither.refmap.json'
+    config 'thither.mixins.json'
 }
 
 repositories {
@@ -103,7 +103,7 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
                 'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                'MixinConfigs'            : 'eclipse.mixins.json'
+                'MixinConfigs'            : 'thither.mixins.json'
         ])
     }
 

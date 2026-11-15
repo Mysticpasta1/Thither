@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "eclipse:nyx_unda",
-    "eclipse:nyx_unda_flowing",
-    "eclipse:sol_unda",
-    "eclipse:sol_unda_flowing",
-    "eclipse:lux_unda",
-    "eclipse:lux_unda_flowing"
+    "thither:nyx_water",
+    "thither:nyx_water_flowing",
+    "thither:sol_water",
+    "thither:sol_water_flowing",
+    "thither:lux_water",
+    "thither:lux_water_flowing"
   ]
 }

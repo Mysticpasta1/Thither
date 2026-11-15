@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "axis=y": { "model": "eclipse:block/sol_truncus" },
-    "axis=z": { "model": "eclipse:block/sol_truncus", "x": 90 },
-    "axis=x": { "model": "eclipse:block/sol_truncus", "x": 90, "y": 90 }
-  }
-}

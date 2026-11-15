@@ -1,0 +1,29 @@
+{
+	"music_disc.whitewash": {
+		"subtitle": "subtitles.thither.whitewash",
+		"sounds": [
+			{
+				"name": "thither:music/disc/whitewash",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.dawnlight": {
+		"subtitle": "subtitles.thither.dawnlight",
+		"sounds": [
+			{
+				"name": "thither:music/disc/dawnlight",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.downtime": {
+		"subtitle": "subtitles.thither.downtime",
+		"sounds": [
+			{
+				"name": "thither:music/disc/downtime",
+				"stream": true
+			}
+		]
+	}
+}

@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "eclipse:nyx_humus",
-    "eclipse:sol_humus",
-    "eclipse:lux_humus",
-    "eclipse:nyx_sero",
-    "eclipse:sol_sero",
-    "eclipse:lux_sero"
+    "thither:nyx_dirt",
+    "thither:sol_dirt",
+    "thither:lux_dirt",
+    "thither:nyx_grass",
+    "thither:sol_grass",
+    "thither:lux_grass"
   ]
 }

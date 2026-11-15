@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "eclipse:nyx_surculus",
-    "eclipse:sol_surculus",
-    "eclipse:lux_surculus"
+    "thither:nyx_sapling",
+    "thither:sol_sapling",
+    "thither:lux_sapling"
   ]
 }

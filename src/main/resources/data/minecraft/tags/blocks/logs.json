@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "eclipse:nyx_truncus",
-    "eclipse:sol_truncus",
-    "eclipse:lux_truncus"
+    "thither:nyx_log",
+    "thither:sol_log",
+    "thither:lux_log"
   ]
 }

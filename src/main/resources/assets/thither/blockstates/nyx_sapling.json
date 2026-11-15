@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "stage=0": { "model": "thither:block/nyx_sapling" },
+    "stage=1": { "model": "thither:block/nyx_sapling" }
+  }
+}
