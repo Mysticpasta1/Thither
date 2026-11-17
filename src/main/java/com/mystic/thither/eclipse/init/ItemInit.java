@@ -27,6 +27,7 @@ public class ItemInit {
     public static final RegistryObject<Item> DOWNTIME_DISC = register("downtime", () -> new EclipseMusicDiscItem(0, SoundInit.DOWNTIME, ECLIPSE_SETTINGS, 163));
 
     public static final RegistryObject<Item> ECLIPSE_INGOT = register("eclipse_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ECLIPSE_KEY_FRAGMENT = register("eclipse_key_fragment", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> ECLIPSE_KEY = register("eclipse_key", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> ECLIPSE_HELMET = register("eclipse_helmet", () -> new ArmorItem(EclipseArmorMaterial.INSTANCE, ArmorItem.Type.HELMET, new Item.Properties()));

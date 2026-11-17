@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "thither:block/sol_log_top",
-    "side": "thither:block/sol_log"
-  }
-}

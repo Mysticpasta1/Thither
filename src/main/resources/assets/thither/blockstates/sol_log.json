@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "axis=y": { "model": "thither:block/sol_log" },
-    "axis=z": { "model": "thither:block/sol_log", "x": 90 },
-    "axis=x": { "model": "thither:block/sol_log", "x": 90, "y": 90 }
-  }
-}

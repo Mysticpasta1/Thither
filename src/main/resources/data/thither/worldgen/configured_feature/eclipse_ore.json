@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 7,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:umbral_stone"
+        },
+        "state": {
+          "Name": "thither:umbral_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:nyx_stone"
+        },
+        "state": {
+          "Name": "thither:nyx_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:nocturne_stone"
+        },
+        "state": {
+          "Name": "thither:nocturne_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:gloam_stone"
+        },
+        "state": {
+          "Name": "thither:gloam_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:halcyon_stone"
+        },
+        "state": {
+          "Name": "thither:halcyon_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:aurelian_stone"
+        },
+        "state": {
+          "Name": "thither:aurelian_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:sol_stone"
+        },
+        "state": {
+          "Name": "thither:sol_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:radiant_stone"
+        },
+        "state": {
+          "Name": "thither:radiant_eclipse_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "thither:lux_stone"
+        },
+        "state": {
+          "Name": "thither:lux_eclipse_ore"
+        }
+      }
+    ]
+  }
+}

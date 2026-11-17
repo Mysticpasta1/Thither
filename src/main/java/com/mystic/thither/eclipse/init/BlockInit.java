@@ -3,9 +3,6 @@ package com.mystic.thither.eclipse.init;
 import com.mystic.thither.eclipse.blocks.EclipseBedrockBlock;
 import com.mystic.thither.eclipse.blocks.EclipseFireBlock;
 import com.mystic.thither.eclipse.blocks.EclipseGrassBlock;
-import com.mystic.thither.eclipse.blocks.EclipsePortalBlock;
-import com.mystic.thither.eclipse.blocks.EclipsePortalCoreBlock;
-import com.mystic.thither.eclipse.blocks.EclipsePortalFrameBlock;
 import com.mystic.thither.eclipse.blocks.EclipseWoodTypes;
 import com.mystic.thither.eclipse.blocks.RunicStoneBlock;
 import com.mystic.thither.eclipse.creativetab.EclipseGroup;
@@ -54,10 +51,17 @@ public class BlockInit {
     public static final Map<String, RegistryObject<Block>> DIRT = new LinkedHashMap<>();
     public static final Map<String, RegistryObject<EclipseGrassBlock>> GRASS = new LinkedHashMap<>();
     public static final Map<String, RegistryObject<Block>> STONE = new LinkedHashMap<>();
+    public static final Map<String, RegistryObject<Block>> RUNIC = new LinkedHashMap<>();
+    public static final Map<String, RegistryObject<Block>> ECLIPSE_ORE = new LinkedHashMap<>();
+    public static final Map<String, RegistryObject<Block>> BEDROCK = new LinkedHashMap<>();
 
+    public static final RegistryObject<Block> NYX_BEDROCK;
     public static final RegistryObject<Block> NYX_STONE;
     public static final RegistryObject<Block> SOL_STONE;
     public static final RegistryObject<Block> LUX_STONE;
+    public static final RegistryObject<Block> NYX_RUNIC;
+    public static final RegistryObject<Block> SOL_RUNIC;
+    public static final RegistryObject<Block> LUX_RUNIC;
     public static final RegistryObject<Block> NYX_DIRT;
     public static final RegistryObject<Block> SOL_DIRT;
     public static final RegistryObject<Block> LUX_DIRT;
@@ -69,9 +73,13 @@ public class BlockInit {
         for (String family : EclipseZones.FAMILIES) {
             terrain(family);
         }
+        NYX_BEDROCK = BEDROCK.get("nyx");
         NYX_STONE = STONE.get("nyx");
         SOL_STONE = STONE.get("sol");
         LUX_STONE = STONE.get("lux");
+        NYX_RUNIC = RUNIC.get("nyx");
+        SOL_RUNIC = RUNIC.get("sol");
+        LUX_RUNIC = RUNIC.get("lux");
         NYX_DIRT = DIRT.get("nyx");
         SOL_DIRT = DIRT.get("sol");
         LUX_DIRT = DIRT.get("lux");
@@ -123,13 +131,6 @@ public class BlockInit {
     }
 
     // ---------------------------------------------------------------------
-    // Portal
-    // ---------------------------------------------------------------------
-    public static final RegistryObject<EclipsePortalFrameBlock> ECLIPSE_PORTAL_FRAME = register("eclipse_portal_frame", EclipsePortalFrameBlock::new);
-    public static final RegistryObject<EclipsePortalCoreBlock> ECLIPSE_HEART = register("eclipse_heart", EclipsePortalCoreBlock::new);
-    public static final RegistryObject<EclipsePortalBlock> ECLIPSE_PORTAL = registerBlock("eclipse_portal", EclipsePortalBlock::new);
-
-    // ---------------------------------------------------------------------
     // Misc
     // ---------------------------------------------------------------------
     public static final RegistryObject<Block> THREAD = registerHidden("thread", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).strength(1.5F, 6.0F).sound(SoundType.METAL)));
@@ -139,7 +140,7 @@ public class BlockInit {
     public static final RegistryObject<EclipseFireBlock> LUX_FIRE = registerBlock("lux_fire", () -> new EclipseFireBlock(11));
 
     private static void terrain(String family) {
-        register(family + "_bedrock", () -> new EclipseBedrockBlock(BlockBehaviour.Properties.of().mapColor(mapColor(family))));
+        BEDROCK.put(family, register(family + "_bedrock", () -> new EclipseBedrockBlock(BlockBehaviour.Properties.of().mapColor(mapColor(family)))));
         RegistryObject<Block> stoneBlock = register(family + "_stone", () -> new Block(stoneProperties(family)));
         STONE.put(family, stoneBlock);
         RegistryObject<Block> dirtBlock = register(family + "_dirt", () -> new Block(dirtProperties(family)));
@@ -149,8 +150,8 @@ public class BlockInit {
         register(family + "_cobblestone_stairs", () -> new StairBlock(() -> cobble.get().defaultBlockState(), stoneProperties(family)));
         register(family + "_cobblestone_slab", () -> new SlabBlock(stoneProperties(family)));
         register(family + "_cobblestone_wall", () -> new WallBlock(stoneProperties(family)));
-        register(family + "_runic_stone", () -> new RunicStoneBlock(EclipseZones.blockLight(family)));
-        register(family + "_eclipse_ore", () -> new Block(oreProperties(family)));
+        RUNIC.put(family, register(family + "_runic_stone", () -> new RunicStoneBlock(EclipseZones.blockLight(family))));
+        ECLIPSE_ORE.put(family, register(family + "_eclipse_ore", () -> new Block(oreProperties(family))));
     }
 
     private static RegistryObject<FlowerBlock> flower(String name, net.minecraft.world.effect.MobEffect effect) {

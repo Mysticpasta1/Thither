@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "thither:umbral_eclipse_ore",
+    "thither:nyx_eclipse_ore",
+    "thither:nocturne_eclipse_ore",
+    "thither:gloam_eclipse_ore",
+    "thither:halcyon_eclipse_ore",
+    "thither:aurelian_eclipse_ore",
+    "thither:sol_eclipse_ore",
+    "thither:radiant_eclipse_ore",
+    "thither:lux_eclipse_ore"
+  ]
+}

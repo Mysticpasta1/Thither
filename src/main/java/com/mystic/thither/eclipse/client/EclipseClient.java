@@ -1,5 +1,8 @@
 package com.mystic.thither.eclipse.client;
 
+import com.mystic.thither.doors.DoorDestination;
+import com.mystic.thither.doors.blocks.DimensionDoorBlock;
+import com.mystic.thither.doors.init.DoorBlockInit;
 import com.mystic.thither.eclipse.client.particle.VoidParticle;
 import com.mystic.thither.eclipse.client.sky.EclipseDimensionSky;
 import com.mystic.thither.eclipse.init.BlockInit;
@@ -33,5 +36,31 @@ public class EclipseClient {
                 .map(RegistryObject::get)
                 .toArray(Block[]::new);
         event.register((state, world, pos, tintIndex) -> 0xFFFFFF, tinted);
+
+        event.register((state, world, pos, tintIndex) -> {
+            if (tintIndex != 0) {
+                return -1;
+            }
+            int destinationColor = DoorDestination.byIndex(state.getValue(DimensionDoorBlock.DESTINATION)).color();
+            if (state.getValue(DimensionDoorBlock.LOCKED)) {
+                // Keep the door's coloured grain, metal and gem visible while making a
+                // sealed door clearly darker than an open one.
+                return blend(0x4A4A5A, destinationColor, 0.45F);
+            }
+            // Only a light wash of the destination colour so the multi-colour texture
+            // underneath still reads as teal, gold, cyan and magenta.
+            return blend(0xFFFFFF, destinationColor, 0.35F);
+        }, DoorBlockInit.DIMENSION_DOOR.get());
+
+        event.register((state, world, pos, tintIndex) -> 0xFFFFFF,
+                DoorBlockInit.THRESHOLD_DOOR.get(), DoorBlockInit.RETURN_DOOR.get());
+    }
+
+    private static int blend(int base, int tint, float amount) {
+        float keep = 1.0F - amount;
+        int red = (int) (((base >> 16) & 0xFF) * keep + ((tint >> 16) & 0xFF) * amount);
+        int green = (int) (((base >> 8) & 0xFF) * keep + ((tint >> 8) & 0xFF) * amount);
+        int blue = (int) ((base & 0xFF) * keep + (tint & 0xFF) * amount);
+        return (red << 16) | (green << 8) | blue;
     }
 }

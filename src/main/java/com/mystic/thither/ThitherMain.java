@@ -1,5 +1,6 @@
 package com.mystic.thither;
 
+import com.mystic.thither.doors.init.DoorRegistration;
 import com.mystic.thither.eclipse.init.EclipseRegistration;
 import com.mystic.thither.utils.Reference;
 import net.minecraft.resources.ResourceLocation;
@@ -21,5 +22,6 @@ public class ThitherMain {
     public ThitherMain(FMLJavaModLoadingContext context) {
         IEventBus bus = context.getModEventBus();
         EclipseRegistration.register(bus);
+        DoorRegistration.register(bus);
     }
 }
