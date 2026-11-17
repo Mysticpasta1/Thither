@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "thither:eclipse/block/eclipse_grass"
-  }
-}

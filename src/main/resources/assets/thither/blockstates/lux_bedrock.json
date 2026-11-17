@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thither:block/lux_bedrock"
-    }
+    "": { "model": "thither:block/lux_bedrock" }
   }
 }

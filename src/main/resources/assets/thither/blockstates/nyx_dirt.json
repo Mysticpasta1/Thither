@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thither:block/nyx_dirt"
-    }
+    "": { "model": "thither:block/nyx_dirt" }
   }
 }

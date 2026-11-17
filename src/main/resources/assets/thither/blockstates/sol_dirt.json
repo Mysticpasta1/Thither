@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thither:block/sol_dirt"
-    }
+    "": { "model": "thither:block/sol_dirt" }
   }
 }

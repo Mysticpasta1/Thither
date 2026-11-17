@@ -6,7 +6,17 @@
   "refmap": "thither.refmap.json",
   "mixins": [
     "NoiseChunkAccess",
-    "StructureManagerAccess"
+    "StructureManagerAccess",
+    "EclipseRawBrightnessMixin",
+    "EclipseSeaFluidMixin",
+    "EclipsePlacementMixin",
+    "EclipseBucketMixin"
+  ],
+  "client": [
+    "EclipseCloudColorMixin",
+    "EclipseLightmapMixin",
+    "EclipseSkyBrightnessMixin",
+    "EclipseDebugLightMixin"
   ],
   "injectors": {
     "defaultRequire": 1

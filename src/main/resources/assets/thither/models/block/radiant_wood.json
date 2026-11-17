@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "thither:eclipse/block/radiant_log",
-    "side": "thither:eclipse/block/radiant_log"
-  }
-}

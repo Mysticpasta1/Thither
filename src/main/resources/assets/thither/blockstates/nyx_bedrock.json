@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thither:block/nyx_bedrock"
-    }
+    "": { "model": "thither:block/nyx_bedrock" }
   }
 }

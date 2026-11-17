@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "thither:eclipse/block/umbral_cobblestone",
-    "side": "thither:eclipse/block/umbral_cobblestone",
-    "top": "thither:eclipse/block/umbral_cobblestone"
-  }
-}

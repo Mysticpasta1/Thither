@@ -1,14 +1,14 @@
 {
-  "temperature": 0.5,
+  "temperature": 0.8,
   "downfall": 0.4,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 3223857,
-    "fog_color": 2960685,
-    "water_color": 2894892,
-    "water_fog_color": 2763306,
-    "grass_color": 16777215,
-    "foliage_color": 16777215,
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 3289656,
+    "water_fog_color": 1710622,
+    "grass_color": 0,
+    "foliage_color": 0,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -34,17 +34,10 @@
     [],
     [],
     [],
-    [
-      "thither:nyx_eclipse_ore"
-    ],
     [],
     [],
-    [
-      "thither:nyx_tree",
-      "thither:nyx_great_tree",
-      "thither:nyx_wisp_patch",
-      "thither:nyx_sprout_patch"
-    ],
+    [],
+    ["thither:nyx_tree", "thither:nyx_great_tree"],
     []
   ]
 }

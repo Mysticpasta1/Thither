@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "thither:radiant_log",
-    "thither:radiant_wood",
-    "thither:radiant_stripped_log",
-    "thither:radiant_stripped_wood"
-  ]
-}

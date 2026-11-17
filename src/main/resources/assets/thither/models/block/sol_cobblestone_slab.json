@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "thither:eclipse/block/sol_cobblestone",
-    "side": "thither:eclipse/block/sol_cobblestone",
-    "top": "thither:eclipse/block/sol_cobblestone"
-  }
-}

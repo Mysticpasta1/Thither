@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thither:block/lux_dirt"
-    }
+    "": { "model": "thither:block/lux_dirt" }
   }
 }

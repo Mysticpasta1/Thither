@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "thither:eclipse/block/halcyon_cobblestone",
-    "side": "thither:eclipse/block/halcyon_cobblestone",
-    "top": "thither:eclipse/block/halcyon_cobblestone"
-  }
-}

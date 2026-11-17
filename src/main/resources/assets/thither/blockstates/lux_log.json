@@ -1,16 +1,7 @@
 {
   "variants": {
-    "axis=y": {
-      "model": "thither:block/lux_log"
-    },
-    "axis=z": {
-      "model": "thither:block/lux_log",
-      "x": 90
-    },
-    "axis=x": {
-      "model": "thither:block/lux_log",
-      "x": 90,
-      "y": 90
-    }
+    "axis=y": { "model": "thither:block/lux_log" },
+    "axis=z": { "model": "thither:block/lux_log", "x": 90 },
+    "axis=x": { "model": "thither:block/lux_log", "x": 90, "y": 90 }
   }
 }

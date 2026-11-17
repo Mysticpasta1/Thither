@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "thither:eclipse/item/aurelian_door"
-  }
-}

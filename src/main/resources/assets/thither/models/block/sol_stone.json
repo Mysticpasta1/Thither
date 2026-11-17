@@ -1,6 +1,4 @@
 {
   "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "thither:eclipse/block/sol_stone"
-  }
+  "textures": { "all": "thither:block/sol_stone" }
 }

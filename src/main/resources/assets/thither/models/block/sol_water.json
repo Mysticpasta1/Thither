@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "thither:eclipse/block/sol_water_still"
+    "particle": "thither:block/sol_water_still"
   }
 }

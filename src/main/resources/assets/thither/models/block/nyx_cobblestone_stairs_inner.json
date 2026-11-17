@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "thither:eclipse/block/nyx_cobblestone",
-    "side": "thither:eclipse/block/nyx_cobblestone",
-    "top": "thither:eclipse/block/nyx_cobblestone"
-  }
-}

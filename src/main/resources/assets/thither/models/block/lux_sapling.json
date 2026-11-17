@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "thither:eclipse/block/lux_sapling"
+    "cross": "thither:block/lux_sapling"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thither:eclipse/item/sol_water_bucket"
+    "layer0": "thither:item/sol_water_bucket"
   }
 }
