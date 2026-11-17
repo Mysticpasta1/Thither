@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_fire_up",
   "render_type": "minecraft:cutout",
   "textures": {
-    "fire": "thither:block/nyx_fire_0"
+    "fire": "thither:eclipse/block/nyx_fire_0"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thither:block/aurelian_slab"
+    },
+    "type=double": {
+      "model": "thither:block/aurelian_planks"
+    },
+    "type=top": {
+      "model": "thither:block/aurelian_slab_top"
+    }
+  }
+}

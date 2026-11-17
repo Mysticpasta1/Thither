@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "thither:eclipse/block/radiant_cobblestone",
+    "side": "thither:eclipse/block/radiant_cobblestone",
+    "top": "thither:eclipse/block/radiant_cobblestone"
+  }
+}

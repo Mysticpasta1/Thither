@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "thither:eclipse/block/halcyon_planks",
+    "side": "thither:eclipse/block/halcyon_planks",
+    "top": "thither:eclipse/block/halcyon_planks"
+  }
+}

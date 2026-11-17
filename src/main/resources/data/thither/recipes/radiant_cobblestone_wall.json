@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "thither:radiant_cobblestone"
+    }
+  },
+  "result": {
+    "item": "thither:radiant_cobblestone_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thither:gloam_planks"
+    }
+  },
+  "result": {
+    "item": "thither:gloam_stairs",
+    "count": 4
+  }
+}

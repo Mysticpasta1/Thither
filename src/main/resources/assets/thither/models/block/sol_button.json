@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "thither:eclipse/block/sol_planks"
+  }
+}

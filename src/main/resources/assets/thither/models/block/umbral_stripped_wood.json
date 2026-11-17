@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thither:eclipse/block/umbral_stripped_log",
+    "side": "thither:eclipse/block/umbral_stripped_log"
+  }
+}

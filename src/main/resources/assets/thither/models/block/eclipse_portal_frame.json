@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thither:eclipse/block/eclipse_portal_frame_top",
+    "side": "thither:eclipse/block/eclipse_portal_frame"
+  }
+}

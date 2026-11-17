@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thither:lux_log",
+    "thither:lux_wood",
+    "thither:lux_stripped_log",
+    "thither:lux_stripped_wood"
+  ]
+}

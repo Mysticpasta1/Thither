@@ -7,218 +7,1622 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "thither:umbral_basin",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:umbral_current",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:umbral_expanse",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:umbral_abyss",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:umbral_expanse",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:umbral_abyss",
+          "parameters": {
+            "temperature": [
+              -1.0,
+              -0.77778
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
           "biome": "thither:nyx_basin",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-1.2, -0.19],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, 1.0],
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:nyx_current",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-0.05, 0.05],
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:nyx_expanse",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:nyx_shadow",
+          "parameters": {
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:nyx_expanse",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:nyx_shadow",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              -0.77778,
+              -0.55556
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:nyx_shadow",
+          "biome": "thither:nocturne_basin",
           "parameters": {
-            "temperature": [-1.0, -0.333],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_basin",
+          "biome": "thither:nocturne_current",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-1.2, -0.19],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, 1.0],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_current",
+          "biome": "thither:nocturne_expanse",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-0.05, 0.05],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_expanse",
+          "biome": "thither:nocturne_dusk",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_expanse",
+          "biome": "thither:nocturne_expanse",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_eclipse",
+          "biome": "thither:nocturne_dusk",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              -0.55556,
+              -0.33333
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:lux_eclipse",
+          "biome": "thither:gloam_basin",
           "parameters": {
-            "temperature": [-0.333, 0.333],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:gloam_current",
+          "parameters": {
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:gloam_expanse",
+          "parameters": {
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:gloam_twilight",
+          "parameters": {
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:gloam_expanse",
+          "parameters": {
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:gloam_twilight",
+          "parameters": {
+            "temperature": [
+              -0.33333,
+              -0.11111
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_basin",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_current",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_expanse",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_calm",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_expanse",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:halcyon_calm",
+          "parameters": {
+            "temperature": [
+              -0.11111,
+              0.11111
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_basin",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_current",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_expanse",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_gilt",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_expanse",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:aurelian_gilt",
+          "parameters": {
+            "temperature": [
+              0.11111,
+              0.33333
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:sol_basin",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-1.2, -0.19],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, 1.0],
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:sol_current",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [-1.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-0.05, 0.05],
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:sol_expanse",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:sol_light",
+          "parameters": {
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:sol_expanse",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [-1.0, 0.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
           "biome": "thither:sol_light",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [-1.0, -0.05],
+            "temperature": [
+              0.33333,
+              0.55556
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         },
         {
-          "biome": "thither:sol_light",
+          "biome": "thither:radiant_basin",
           "parameters": {
-            "temperature": [0.333, 1.0],
-            "humidity": [0.0, 1.0],
-            "continentalness": [-0.19, 1.0],
-            "erosion": [-1.0, 1.0],
-            "depth": [-1.0, 1.0],
-            "weirdness": [0.05, 1.0],
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:radiant_current",
+          "parameters": {
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:radiant_expanse",
+          "parameters": {
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:radiant_glow",
+          "parameters": {
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:radiant_expanse",
+          "parameters": {
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:radiant_glow",
+          "parameters": {
+            "temperature": [
+              0.55556,
+              0.77778
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_basin",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -1.2,
+              -0.19
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_current",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -0.05,
+              0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_expanse",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_eclipse",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              -1.0,
+              -0.05
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_expanse",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              0.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "thither:lux_eclipse",
+          "parameters": {
+            "temperature": [
+              0.77778,
+              1.0
+            ],
+            "humidity": [
+              0.0,
+              1.0
+            ],
+            "continentalness": [
+              -0.19,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "weirdness": [
+              0.05,
+              1.0
+            ],
             "offset": 0.0
           }
         }

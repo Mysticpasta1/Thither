@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thither:eclipse/item/eclipse_sword"
+  }
+}

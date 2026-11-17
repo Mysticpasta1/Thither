@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thither:umbral_log",
+    "thither:umbral_wood",
+    "thither:umbral_stripped_log",
+    "thither:umbral_stripped_wood"
+  ]
+}

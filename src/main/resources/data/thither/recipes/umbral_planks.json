@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thither:umbral_logs"
+    }
+  ],
+  "result": {
+    "item": "thither:umbral_planks",
+    "count": 4
+  }
+}

@@ -1,14 +1,14 @@
 {
-  "temperature": 0.8,
+  "temperature": 0.5,
   "downfall": 0.4,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 5066061,
-    "fog_color": 4013373,
-    "water_color": 9079446,
-    "water_fog_color": 6052966,
-    "grass_color": 4539717,
-    "foliage_color": 4539717,
+    "sky_color": 16053492,
+    "fog_color": 15790320,
+    "water_color": 15724527,
+    "water_fog_color": 15592941,
+    "grass_color": 16777215,
+    "foliage_color": 16777215,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -34,10 +34,16 @@
     [],
     [],
     [],
+    [
+      "thither:lux_eclipse_ore"
+    ],
     [],
     [],
-    [],
-    ["thither:lux_expanse_tree"],
+    [
+      "thither:lux_expanse_tree",
+      "thither:lux_silk_patch",
+      "thither:lux_bloom_patch"
+    ],
     []
   ]
 }

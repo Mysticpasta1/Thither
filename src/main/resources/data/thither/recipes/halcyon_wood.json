@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "key": {
+    "L": {
+      "tag": "thither:halcyon_logs"
+    }
+  },
+  "result": {
+    "item": "thither:halcyon_wood",
+    "count": 3
+  }
+}

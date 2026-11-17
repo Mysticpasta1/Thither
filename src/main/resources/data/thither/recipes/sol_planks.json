@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thither:sol_logs"
+    }
+  ],
+  "result": {
+    "item": "thither:sol_planks",
+    "count": 4
+  }
+}

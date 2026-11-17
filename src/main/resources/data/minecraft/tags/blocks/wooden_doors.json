@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "thither:nyx_door",
+    "thither:sol_door",
+    "thither:lux_door",
+    "thither:umbral_door",
+    "thither:nocturne_door",
+    "thither:gloam_door",
+    "thither:radiant_door",
+    "thither:aurelian_door",
+    "thither:halcyon_door"
+  ]
+}

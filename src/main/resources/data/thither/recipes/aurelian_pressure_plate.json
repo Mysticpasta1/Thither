@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "thither:aurelian_planks"
+    }
+  },
+  "result": {
+    "item": "thither:aurelian_pressure_plate",
+    "count": 1
+  }
+}

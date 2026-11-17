@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "thither:block/sol_grass" }
+    "": {
+      "model": "thither:block/sol_grass"
+    }
   }
 }

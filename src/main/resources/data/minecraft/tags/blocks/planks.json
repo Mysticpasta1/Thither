@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "thither:nyx_planks",
+    "thither:sol_planks",
+    "thither:lux_planks",
+    "thither:umbral_planks",
+    "thither:nocturne_planks",
+    "thither:gloam_planks",
+    "thither:radiant_planks",
+    "thither:aurelian_planks",
+    "thither:halcyon_planks"
+  ]
+}

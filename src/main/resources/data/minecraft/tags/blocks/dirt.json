@@ -6,6 +6,18 @@
     "thither:lux_dirt",
     "thither:nyx_grass",
     "thither:sol_grass",
-    "thither:lux_grass"
+    "thither:lux_grass",
+    "thither:umbral_dirt",
+    "thither:nocturne_dirt",
+    "thither:gloam_dirt",
+    "thither:halcyon_dirt",
+    "thither:aurelian_dirt",
+    "thither:radiant_dirt",
+    "thither:umbral_grass",
+    "thither:nocturne_grass",
+    "thither:gloam_grass",
+    "thither:halcyon_grass",
+    "thither:aurelian_grass",
+    "thither:radiant_grass"
   ]
 }

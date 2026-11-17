@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "thither:block/nyx_stone" }
+    "": {
+      "model": "thither:block/nyx_stone"
+    }
   }
 }

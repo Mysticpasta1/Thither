@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "thither:sol_cobblestone"
+    }
+  },
+  "result": {
+    "item": "thither:sol_cobblestone_wall",
+    "count": 6
+  }
+}

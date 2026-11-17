@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thither:aurelian_log",
+    "thither:aurelian_wood",
+    "thither:aurelian_stripped_log",
+    "thither:aurelian_stripped_wood"
+  ]
+}

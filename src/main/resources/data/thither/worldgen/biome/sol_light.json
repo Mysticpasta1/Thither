@@ -1,12 +1,12 @@
 {
-  "temperature": 0.8,
+  "temperature": 0.5,
   "downfall": 0.4,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 12965100,
-    "fog_color": 14476528,
-    "water_color": 15000810,
-    "water_fog_color": 12632264,
+    "sky_color": 12434877,
+    "fog_color": 12171705,
+    "water_color": 12105912,
+    "water_fog_color": 11974326,
     "grass_color": 16777215,
     "foliage_color": 16777215,
     "mood_sound": {
@@ -34,10 +34,17 @@
     [],
     [],
     [],
+    [
+      "thither:sol_eclipse_ore"
+    ],
     [],
     [],
-    [],
-    ["thither:sol_tree", "thither:sol_great_tree"],
+    [
+      "thither:sol_tree",
+      "thither:sol_great_tree",
+      "thither:sol_ray_patch",
+      "thither:sol_blossom_patch"
+    ],
     []
   ]
 }

@@ -2,6 +2,6 @@
   "parent": "minecraft:block/leaves",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
-    "all": "thither:block/lux_leaves"
+    "all": "thither:eclipse/block/lux_leaves"
   }
 }

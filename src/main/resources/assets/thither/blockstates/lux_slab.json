@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thither:block/lux_slab"
+    },
+    "type=double": {
+      "model": "thither:block/lux_planks"
+    },
+    "type=top": {
+      "model": "thither:block/lux_slab_top"
+    }
+  }
+}

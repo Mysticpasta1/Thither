@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "thither:item/whitewash"
+    "layer0": "thither:eclipse/item/whitewash"
   }
 }

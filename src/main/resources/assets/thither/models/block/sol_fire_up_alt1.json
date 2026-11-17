@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_fire_up_alt",
   "render_type": "minecraft:cutout",
   "textures": {
-    "fire": "thither:block/sol_fire_1"
+    "fire": "thither:eclipse/block/sol_fire_1"
   }
 }

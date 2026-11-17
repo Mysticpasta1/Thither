@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "thither:block/radiant_log"
+    },
+    "axis=z": {
+      "model": "thither:block/radiant_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "thither:block/radiant_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

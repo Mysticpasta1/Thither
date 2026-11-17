@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "thither:lux_logs"
+    }
+  ],
+  "result": {
+    "item": "thither:lux_planks",
+    "count": 4
+  }
+}

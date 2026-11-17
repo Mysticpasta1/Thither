@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "thither:block/nocturne_log"
+    },
+    "axis=z": {
+      "model": "thither:block/nocturne_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "thither:block/nocturne_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

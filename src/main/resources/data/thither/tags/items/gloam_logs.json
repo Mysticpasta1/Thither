@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thither:gloam_log",
+    "thither:gloam_wood",
+    "thither:gloam_stripped_log",
+    "thither:gloam_stripped_wood"
+  ]
+}

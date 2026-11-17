@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "thither:eclipse/block/lux_door_bottom",
+    "top": "thither:eclipse/block/lux_door_top"
+  }
+}

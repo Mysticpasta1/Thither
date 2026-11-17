@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "key": {
+    "L": {
+      "tag": "thither:umbral_logs"
+    }
+  },
+  "result": {
+    "item": "thither:umbral_wood",
+    "count": 3
+  }
+}

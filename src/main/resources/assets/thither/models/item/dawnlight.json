@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "thither:item/dawnlight"
+    "layer0": "thither:eclipse/item/dawnlight"
   }
 }

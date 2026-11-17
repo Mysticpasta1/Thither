@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "thither:nyx_fence_gate",
+    "thither:sol_fence_gate",
+    "thither:lux_fence_gate",
+    "thither:umbral_fence_gate",
+    "thither:nocturne_fence_gate",
+    "thither:gloam_fence_gate",
+    "thither:radiant_fence_gate",
+    "thither:aurelian_fence_gate",
+    "thither:halcyon_fence_gate"
+  ]
+}

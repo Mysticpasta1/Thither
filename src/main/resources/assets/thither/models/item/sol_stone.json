@@ -1,1 +1,3 @@
-{ "parent": "thither:block/sol_stone" }
+{
+  "parent": "thither:block/sol_stone"
+}

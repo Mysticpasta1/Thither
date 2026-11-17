@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "thither:block/nocturne_wood"
+    },
+    "axis=z": {
+      "model": "thither:block/nocturne_wood",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "thither:block/nocturne_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

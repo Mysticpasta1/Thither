@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thither:block/nyx_slab"
+    },
+    "type=double": {
+      "model": "thither:block/nyx_planks"
+    },
+    "type=top": {
+      "model": "thither:block/nyx_slab_top"
+    }
+  }
+}

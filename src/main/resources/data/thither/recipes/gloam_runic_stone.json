@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thither:eclipse_ingot"
+    },
+    {
+      "item": "thither:gloam_cobblestone"
+    },
+    {
+      "item": "thither:gloam_cobblestone"
+    },
+    {
+      "item": "thither:gloam_cobblestone"
+    },
+    {
+      "item": "thither:gloam_cobblestone"
+    }
+  ],
+  "result": {
+    "item": "thither:gloam_runic_stone",
+    "count": 4
+  }
+}

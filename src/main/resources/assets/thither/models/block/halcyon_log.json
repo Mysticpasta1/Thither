@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thither:eclipse/block/halcyon_log_top",
+    "side": "thither:eclipse/block/halcyon_log"
+  }
+}

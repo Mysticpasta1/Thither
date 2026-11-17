@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "thither:eclipse/block/sol_planks",
+    "side": "thither:eclipse/block/sol_planks",
+    "top": "thither:eclipse/block/sol_planks"
+  }
+}

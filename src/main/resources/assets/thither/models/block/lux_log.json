@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "thither:block/lux_log_top",
-    "side": "thither:block/lux_log"
+    "end": "thither:eclipse/block/lux_log_top",
+    "side": "thither:eclipse/block/lux_log"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "thither:eclipse/block/lux_cobblestone",
+    "side": "thither:eclipse/block/lux_cobblestone",
+    "top": "thither:eclipse/block/lux_cobblestone"
+  }
+}

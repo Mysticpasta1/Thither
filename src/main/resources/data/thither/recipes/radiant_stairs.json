@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thither:radiant_planks"
+    }
+  },
+  "result": {
+    "item": "thither:radiant_stairs",
+    "count": 4
+  }
+}

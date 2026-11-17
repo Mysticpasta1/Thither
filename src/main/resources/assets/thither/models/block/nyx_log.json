@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "thither:block/nyx_log_top",
-    "side": "thither:block/nyx_log"
+    "end": "thither:eclipse/block/nyx_log_top",
+    "side": "thither:eclipse/block/nyx_log"
   }
 }

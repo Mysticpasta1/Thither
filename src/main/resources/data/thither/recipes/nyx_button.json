@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thither:nyx_planks"
+    }
+  ],
+  "result": {
+    "item": "thither:nyx_button",
+    "count": 1
+  }
+}

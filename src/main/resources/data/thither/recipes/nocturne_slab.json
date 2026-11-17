@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thither:nocturne_planks"
+    }
+  },
+  "result": {
+    "item": "thither:nocturne_slab",
+    "count": 6
+  }
+}

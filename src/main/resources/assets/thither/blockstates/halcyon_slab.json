@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thither:block/halcyon_slab"
+    },
+    "type=double": {
+      "model": "thither:block/halcyon_planks"
+    },
+    "type=top": {
+      "model": "thither:block/halcyon_slab_top"
+    }
+  }
+}

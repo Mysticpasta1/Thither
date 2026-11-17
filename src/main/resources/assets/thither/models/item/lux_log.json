@@ -1,1 +1,3 @@
-{ "parent": "thither:block/lux_log" }
+{
+  "parent": "thither:block/lux_log"
+}

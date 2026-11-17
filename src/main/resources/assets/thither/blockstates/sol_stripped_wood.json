@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "thither:block/sol_stripped_wood"
+    },
+    "axis=z": {
+      "model": "thither:block/sol_stripped_wood",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "thither:block/sol_stripped_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

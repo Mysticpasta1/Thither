@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thither:eclipse_ingot"
+    },
+    {
+      "item": "thither:umbral_cobblestone"
+    },
+    {
+      "item": "thither:umbral_cobblestone"
+    },
+    {
+      "item": "thither:umbral_cobblestone"
+    },
+    {
+      "item": "thither:umbral_cobblestone"
+    }
+  ],
+  "result": {
+    "item": "thither:umbral_runic_stone",
+    "count": 4
+  }
+}

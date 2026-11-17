@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "thither:block/lux_grass" }
+    "": {
+      "model": "thither:block/lux_grass"
+    }
   }
 }

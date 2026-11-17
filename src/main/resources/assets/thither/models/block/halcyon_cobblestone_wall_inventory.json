@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "thither:eclipse/block/halcyon_cobblestone"
+  }
+}

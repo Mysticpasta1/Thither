@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "thither:nocturne_planks"
+    }
+  },
+  "result": {
+    "item": "thither:nocturne_door",
+    "count": 3
+  }
+}

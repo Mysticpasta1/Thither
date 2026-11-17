@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thither:eclipse_ingot"
+    },
+    {
+      "item": "thither:aurelian_cobblestone"
+    },
+    {
+      "item": "thither:aurelian_cobblestone"
+    },
+    {
+      "item": "thither:aurelian_cobblestone"
+    },
+    {
+      "item": "thither:aurelian_cobblestone"
+    }
+  ],
+  "result": {
+    "item": "thither:aurelian_runic_stone",
+    "count": 4
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thither:item/lux_lava_bucket"
+    "layer0": "thither:eclipse/item/lux_lava_bucket"
   }
 }

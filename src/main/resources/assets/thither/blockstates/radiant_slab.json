@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thither:block/radiant_slab"
+    },
+    "type=double": {
+      "model": "thither:block/radiant_planks"
+    },
+    "type=top": {
+      "model": "thither:block/radiant_slab_top"
+    }
+  }
+}

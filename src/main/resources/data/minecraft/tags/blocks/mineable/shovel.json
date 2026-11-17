@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "thither:nyx_dirt",
+    "thither:sol_dirt",
+    "thither:lux_dirt",
+    "thither:umbral_dirt",
+    "thither:nocturne_dirt",
+    "thither:gloam_dirt",
+    "thither:halcyon_dirt",
+    "thither:aurelian_dirt",
+    "thither:radiant_dirt",
+    "thither:umbral_grass",
+    "thither:nyx_grass",
+    "thither:nocturne_grass",
+    "thither:gloam_grass",
+    "thither:halcyon_grass",
+    "thither:aurelian_grass",
+    "thither:sol_grass",
+    "thither:radiant_grass",
+    "thither:lux_grass"
+  ]
+}

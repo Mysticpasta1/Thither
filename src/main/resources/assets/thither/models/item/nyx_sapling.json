@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thither:item/nyx_sapling"
+    "layer0": "thither:eclipse/block/nyx_sapling"
   }
 }
