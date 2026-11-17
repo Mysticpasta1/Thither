@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
  * the Eclipse key opens door II and the remaining realms are left as sealed placeholders.</p>
  */
 public enum DoorDestination {
-    ECLIPSE(0, "eclipse", true, EclipseDimension.ECLIPSE_WORLD, 0x67E8F9),
+    ECLIPSE(0, "eclipse", true, null, 0x67E8F9),
     SEALED_2(1, "sealed_2", false, null, 0x9B7BFF),
     SEALED_3(2, "sealed_3", false, null, 0xF07BD8),
     SEALED_4(3, "sealed_4", false, null, 0xF77B7B),
@@ -67,17 +67,6 @@ public enum DoorDestination {
 
     public Component displayName() {
         return Component.translatable("door.thither." + this.name);
-    }
-
-    /**
-     * The key that opens this door, or {@code null} when its key has not been designed yet.
-     * The Eclipse key is forged from the ores and stones of the Eclipse dimension.
-     */
-    public Item keyItem() {
-        return switch (this) {
-            case SEALED_2 -> ItemInit.ECLIPSE_KEY.get();
-            default -> null;
-        };
     }
 
     public static DoorDestination byIndex(int index) {

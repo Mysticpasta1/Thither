@@ -44,65 +44,12 @@ public class EclipseDimensionSky extends DimensionSpecialEffects {
     }
 
     @Override
-    public float[] getSunriseColor(float timeOfDay, float partialTick) {
-        float[] color = super.getSunriseColor(timeOfDay, partialTick);
-        if (color == null) {
-            return null;
-        }
-        float gray = (color[0] + color[1] + color[2]) / 3.0F;
-        color[0] = gray;
-        color[1] = gray;
-        color[2] = gray;
-        return color;
-    }
-
-    @Override
     public boolean renderSky(ClientLevel level, int ticks, float partialTick, PoseStack poseStack, Camera camera, Matrix4f projectionMatrix, boolean isFoggy, Runnable setupFog) {
-        setupFog.run();
-        if (isFoggy) {
-            return true;
-        }
-        FogType fogType = camera.getFluidInCamera();
-        if (fogType == FogType.POWDER_SNOW || fogType == FogType.LAVA || blocksSky(camera)) {
-            return true;
-        }
-
         Vec3 skyColor = level.getSkyColor(camera.getPosition(), partialTick);
         RenderSystem.depthMask(false);
         RenderSystem.setShaderColor((float) skyColor.x, (float) skyColor.y, (float) skyColor.z, 1.0F);
         RenderSystem.setShader(GameRenderer::getPositionShader);
-        PoseStack modelView = RenderSystem.getModelViewStack();
-        modelView.pushPose();
-        modelView.setIdentity();
-        modelView.mulPoseMatrix(poseStack.last().pose());
-        RenderSystem.applyModelViewMatrix();
-        drawSkyDisc(16.0F);
-        modelView.popPose();
-        RenderSystem.applyModelViewMatrix();
         RenderSystem.enableBlend();
-
-        float[] sunrise = getSunriseColor(level.getTimeOfDay(partialTick), partialTick);
-        if (sunrise != null) {
-            RenderSystem.setShader(GameRenderer::getPositionColorShader);
-            RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-            poseStack.pushPose();
-            poseStack.mulPose(com.mojang.math.Axis.XP.rotationDegrees(90.0F));
-            float spin = Mth.sin(level.getSunAngle(partialTick)) < 0.0F ? 180.0F : 0.0F;
-            poseStack.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(spin));
-            poseStack.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(90.0F));
-            Matrix4f matrix = poseStack.last().pose();
-            BufferBuilder buffer = Tesselator.getInstance().getBuilder();
-            buffer.begin(VertexFormat.Mode.TRIANGLE_FAN, DefaultVertexFormat.POSITION_COLOR);
-            buffer.vertex(matrix, 0.0F, 100.0F, 0.0F).color(sunrise[0], sunrise[1], sunrise[2], sunrise[3]).endVertex();
-            for (int step = 0; step <= 16; step++) {
-                float angle = step * ((float) Math.PI * 2.0F) / 16.0F;
-                float sine = Mth.sin(angle);
-                float cosine = Mth.cos(angle);
-                buffer.vertex(matrix, sine * 120.0F, cosine * 120.0F, -cosine * 40.0F * sunrise[3]).color(sunrise[0], sunrise[1], sunrise[2], 0.0F).endVertex();
-            }
-            BufferUploader.drawWithShader(buffer.end());
-            poseStack.popPose();
-        }
 
         float rainVisibility = 1.0F - level.getRainLevel(partialTick);
         poseStack.pushPose();
@@ -110,12 +57,9 @@ public class EclipseDimensionSky extends DimensionSpecialEffects {
         poseStack.mulPose(com.mojang.math.Axis.XP.rotationDegrees(level.getTimeOfDay(partialTick) * 360.0F));
         Matrix4f celestial = poseStack.last().pose();
 
-        FogRenderer.setupNoFog();
         RenderSystem.disableDepthTest();
         RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
-        float sun = sunStrength(camera);
-        RenderSystem.setShaderColor(sun, sun, sun, rainVisibility);
         RenderSystem.setShaderTexture(0, SUN_PHASES);
         drawPhase(celestial, 30.0F, 100.0F, level.getMoonPhase());
 
@@ -130,20 +74,9 @@ public class EclipseDimensionSky extends DimensionSpecialEffects {
         RenderSystem.defaultBlendFunc();
         RenderSystem.disableBlend();
         poseStack.popPose();
-        setupFog.run();
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.depthMask(true);
         return true;
-    }
-
-    private static void drawSkyDisc(float y) {
-        BufferBuilder buffer = Tesselator.getInstance().getBuilder();
-        buffer.begin(VertexFormat.Mode.TRIANGLE_FAN, DefaultVertexFormat.POSITION);
-        buffer.vertex(0.0D, y, 0.0D).endVertex();
-        for (int angle = -180; angle <= 180; angle += 45) {
-            buffer.vertex(Mth.cos(angle * ((float) Math.PI / 180.0F)) * 512.0F, y, Mth.sin(angle * ((float) Math.PI / 180.0F)) * 512.0F).endVertex();
-        }
-        BufferUploader.drawWithShader(buffer.end());
     }
 
     private static void drawPhase(Matrix4f matrix, float size, float y, int phase) {
@@ -169,20 +102,5 @@ public class EclipseDimensionSky extends DimensionSpecialEffects {
             buffer.vertex(matrix, -size, y, -size).uv(u1, v0).endVertex();
         }
         BufferUploader.drawWithShader(buffer.end());
-    }
-
-    private static float sunStrength(Camera camera) {
-        ClientLevel level = Minecraft.getInstance().level;
-        if (level == null) {
-            return 1.0F;
-        }
-        return EclipseZones.sunStrength(level, BlockPos.containing(camera.getPosition()));
-    }
-
-    private static boolean blocksSky(Camera camera) {
-        if (!(camera.getEntity() instanceof LivingEntity living)) {
-            return false;
-        }
-        return living.hasEffect(MobEffects.BLINDNESS) || living.hasEffect(MobEffects.DARKNESS);
     }
 }

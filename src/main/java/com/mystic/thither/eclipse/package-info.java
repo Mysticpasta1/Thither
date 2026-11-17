@@ -5,6 +5,8 @@
  * <p>Each new dimension gets its own sibling package (for example
  * {@code com.mystic.thither.rainbonic}) with a single registration entry point
  * equivalent to {@link com.mystic.thither.eclipse.init.EclipseRegistration},
- * so {@link com.mystic.thither.ThitherMain} only needs one call per dimension.
+ * so {@link Thither} only needs one call per dimension.
  */
 package com.mystic.thither.eclipse;
+
+import com.mystic.thither.Thither;

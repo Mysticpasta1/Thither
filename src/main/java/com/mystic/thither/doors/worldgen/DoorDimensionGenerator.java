@@ -2,7 +2,6 @@ package com.mystic.thither.doors.worldgen;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.mystic.thither.eclipse.init.BlockInit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -90,7 +89,7 @@ public class DoorDimensionGenerator extends ChunkGenerator {
         BlockState[] states = new BlockState[level.getHeight()];
         Arrays.fill(states, Blocks.AIR.defaultBlockState());
         if (DoorHubLayout.isInsideHub(x, z)) {
-            states[DoorHubLayout.FLOOR_Y - level.getMinBuildHeight()] = BlockInit.NYX_STONE.get().defaultBlockState();
+            states[DoorHubLayout.FLOOR_Y - level.getMinBuildHeight()] = Blocks.BEDROCK.defaultBlockState(); //temp bedrock until more blocks are in
         }
         return new NoiseColumn(level.getMinBuildHeight(), states);
     }

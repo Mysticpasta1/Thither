@@ -3,7 +3,6 @@ package com.mystic.thither.doors.worldgen;
 import com.mystic.thither.doors.DoorDestination;
 import com.mystic.thither.doors.blocks.DimensionDoorBlock;
 import com.mystic.thither.doors.init.DoorBlockInit;
-import com.mystic.thither.eclipse.init.BlockInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Blocks;
@@ -61,11 +60,11 @@ public final class DoorHubLayout {
         Heightmap surface = chunk.getOrCreateHeightmapUnprimed(Heightmap.Types.WORLD_SURFACE_WG);
         Heightmap oceanFloor = chunk.getOrCreateHeightmapUnprimed(Heightmap.Types.OCEAN_FLOOR_WG);
 
-        BlockState shell = BlockInit.NYX_BEDROCK.get().defaultBlockState();
-        BlockState floor = BlockInit.NYX_STONE.get().defaultBlockState();
-        BlockState accent = BlockInit.SOL_STONE.get().defaultBlockState();
-        BlockState glow = BlockInit.LUX_STONE.get().defaultBlockState();
-        BlockState light = BlockInit.LUX_RUNIC.get().defaultBlockState();
+        BlockState shell = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until I get the blocks in for it*/
+        BlockState floor = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until I get the blocks in for it*/
+        BlockState accent = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until I get the blocks in for it*/
+        BlockState glow = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until I get the blocks in for it*/
+        BlockState light = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until I get the blocks in for it*/
 
         for (int x = 0; x < 16; x++) {
             for (int z = 0; z < 16; z++) {

@@ -10,18 +10,18 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(Reference.MODID)
-public class ThitherMain {
+@Mod(Thither.MODID)
+public class Thither {
 
-    public static final Logger LOGGER = LogManager.getLogger(Reference.MODID);
+    public static final Logger LOGGER = LogManager.getLogger(Thither.MODID);
+
+    public static final String MODID = "thither";
 
     public static ResourceLocation id(String path) {
-        return ResourceLocation.fromNamespaceAndPath(Reference.MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(Thither.MODID, path);
     }
 
-    public ThitherMain(FMLJavaModLoadingContext context) {
+    public Thither(FMLJavaModLoadingContext context) {
         IEventBus bus = context.getModEventBus();
-        EclipseRegistration.register(bus);
-        DoorRegistration.register(bus);
     }
 }

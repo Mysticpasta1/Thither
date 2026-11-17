@@ -1,15 +1,11 @@
 package com.mystic.thither.doors;
 
 import com.mojang.serialization.Codec;
-import com.mystic.thither.ThitherMain;
+import com.mystic.thither.Thither;
 import com.mystic.thither.doors.blocks.DimensionDoorBlock;
 import com.mystic.thither.doors.init.DoorBlockInit;
 import com.mystic.thither.doors.worldgen.DoorDimensionGenerator;
 import com.mystic.thither.doors.worldgen.DoorHubLayout;
-import com.mystic.thither.eclipse.init.BlockInit;
-import com.mystic.thither.eclipse.worldgen.biomes.EclipseZones;
-import com.mystic.thither.eclipse.worldgen.dimension.EclipseDimension;
-import com.mystic.thither.utils.Reference;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -26,6 +22,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
@@ -42,15 +39,15 @@ import net.minecraftforge.registries.RegistryObject;
  * Everything about the door dimension and the teleports between it, the Eclipse
  * dimension, and ordinary worlds.
  */
-@Mod.EventBusSubscriber(modid = Reference.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid = Thither.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class DoorDimension {
     public static final ResourceKey<Level> DOOR_WORLD =
-            ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath(Reference.MODID, "doors"));
+            ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath(Thither.MODID, "doors"));
     public static final ResourceKey<net.minecraft.world.level.dimension.DimensionType> DOOR_DIMENSION_TYPE =
-            ResourceKey.create(Registries.DIMENSION_TYPE, ResourceLocation.fromNamespaceAndPath(Reference.MODID, "doors"));
+            ResourceKey.create(Registries.DIMENSION_TYPE, ResourceLocation.fromNamespaceAndPath(Thither.MODID, "doors"));
 
     public static final DeferredRegister<Codec<? extends ChunkGenerator>> CHUNK_GENERATORS =
-            DeferredRegister.create(Registries.CHUNK_GENERATOR, Reference.MODID);
+            DeferredRegister.create(Registries.CHUNK_GENERATOR, Thither.MODID);
     public static final RegistryObject<Codec<DoorDimensionGenerator>> DOOR_GENERATOR =
             CHUNK_GENERATORS.register("door_hub", () -> DoorDimensionGenerator.CODEC);
 
@@ -70,9 +67,11 @@ public final class DoorDimension {
         return level != null && level.dimension().equals(DOOR_WORLD);
     }
 
+    /* will need to be readded after dimension is redone
     public static boolean isModDimension(Level level) {
         return isDoorDimension(level) || EclipseDimension.isEclipseDimension(level);
     }
+    */
 
     @SubscribeEvent
     public static void onServerStarted(ServerStartedEvent event) {
@@ -91,7 +90,7 @@ public final class DoorDimension {
                 }
             }
             BlockState returnDoor = DOOR_DIMENSION.getBlockState(new BlockPos(15, DoorHubLayout.WALK_Y, 8));
-            ThitherMain.LOGGER.info("Door dimension ready; {} dimension doors, return door {}", lowerDoors, returnDoor);
+            Thither.LOGGER.info("Door dimension ready; {} dimension doors, return door {}", lowerDoors, returnDoor);
         }
     }
 
@@ -205,12 +204,12 @@ public final class DoorDimension {
         }
 
         BlockPos centre = new BlockPos(0, doorY, 0);
-        String family = EclipseZones.family(level.getBiome(centre));
-        Block stoneBlock = BlockInit.STONE.getOrDefault(family, BlockInit.NYX_STONE).get();
-        Block runicBlock = BlockInit.RUNIC.getOrDefault(family, BlockInit.NYX_RUNIC).get();
+        //String family = EclipseZones.family(level.getBiome(centre)); zones are down until I get the dimension back up
+        Block stoneBlock = Blocks.BEDROCK; /*temp bedrock until more blocks are in*/
+        Block runicBlock = Blocks.BEDROCK; /*temp bedrock until more blocks are in*/
         BlockState stone = stoneBlock.defaultBlockState();
         BlockState runic = runicBlock.defaultBlockState();
-        BlockState light = BlockInit.LUX_RUNIC.get().defaultBlockState();
+        BlockState light = Blocks.BEDROCK.defaultBlockState(); /*temp bedrock until more blocks are in*/;
 
         // Safe floor, and clear the shrine volume before rebuilding the arch.
         for (int x = -3; x <= 3; x++) {
@@ -242,7 +241,7 @@ public final class DoorDimension {
         level.setBlockAndUpdate(new BlockPos(0, doorY + 1, -2), lower.setValue(DoorBlock.HALF, DoubleBlockHalf.UPPER));
 
         // A little glow in the floor so the arrival point is easy to find again.
-        level.setBlockAndUpdate(new BlockPos(0, doorY - 1, 0), BlockInit.LUX_STONE.get().defaultBlockState());
+        level.setBlockAndUpdate(new BlockPos(0, doorY - 1, 0),  Blocks.BEDROCK.defaultBlockState());  /*temp bedrock until more blocks are in*/
 
         return new Arrival(new BlockPos(0, doorY, -2), Direction.SOUTH);
     }

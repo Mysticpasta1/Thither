@@ -5,16 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "thither.refmap.json",
   "mixins": [
-    "EclipseRawBrightnessMixin",
-    "EclipseSeaFluidMixin",
-    "EclipsePlacementMixin",
-    "EclipseBucketMixin"
   ],
   "client": [
-    "EclipseCloudColorMixin",
-    "EclipseLightmapMixin",
-    "EclipseSkyBrightnessMixin",
-    "EclipseDebugLightMixin"
   ],
   "injectors": {
     "defaultRequire": 1

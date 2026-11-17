@@ -57,14 +57,14 @@ public class ThresholdDoorBlock extends DoorBlock {
 
         DoorUtil.setOpen(level, lowerPos, lowerState, true, player);
         level.playSound(null, lowerPos, SoundEvents.PORTAL_TRAVEL, SoundSource.BLOCKS, 0.5F, 1.2F);
-
-        if (DoorDimension.isDoorDimension(level)) {
-            DoorDimension.returnHome(serverPlayer);
-        } else if (DoorDimension.isModDimension(level)) {
-            DoorDimension.enterHub(serverPlayer, false);
-        } else {
-            DoorDimension.enterHub(serverPlayer, true);
-        }
+        //temp disabled until isModDimension(level) is back
+        //if (DoorDimension.isDoorDimension(level)) {
+        //    DoorDimension.returnHome(serverPlayer);
+        //} else if (DoorDimension.isModDimension(level)) {
+        //    DoorDimension.enterHub(serverPlayer, false);
+        //} else {
+        //    DoorDimension.enterHub(serverPlayer, true);
+        //}
         return InteractionResult.CONSUME;
     }
 

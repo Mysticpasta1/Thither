@@ -75,37 +75,7 @@ public class DimensionDoorBlock extends DoorBlock {
         }
 
         DoorDestination destination = DoorDestination.byIndex(lowerState.getValue(DESTINATION));
-        if (lowerState.getValue(LOCKED)) {
-            Item key = destination.keyItem();
-            ItemStack held = player.getItemInHand(hand);
-            if (key != null && held.is(key)) {
-                setLocked(level, lowerPos, lowerState, false);
-                if (!player.getAbilities().instabuild) {
-                    held.shrink(1);
-                }
-                level.playSound(null, lowerPos, SoundEvents.END_PORTAL_FRAME_FILL, SoundSource.BLOCKS, 1.0F, 1.35F);
-                if (level instanceof ServerLevel serverLevel) {
-                    serverLevel.sendParticles(ParticleTypes.END_ROD,
-                            lowerPos.getX() + 0.5D, lowerPos.getY() + 1.0D, lowerPos.getZ() + 0.5D,
-                            24, 0.6D, 0.9D, 0.6D, 0.05D);
-                }
-                player.displayClientMessage(Component.translatable("message.thither.door_unlocked", destination.displayName())
-                        .withStyle(ChatFormatting.AQUA), true);
-                return InteractionResult.CONSUME;
-            }
-
-            if (key != null) {
-                player.displayClientMessage(Component.translatable("message.thither.door_locked",
-                        destination.displayName(),
-                        Component.translatable(key.getDescriptionId()).withStyle(ChatFormatting.GOLD)
-                ).withStyle(ChatFormatting.GRAY), true);
-            } else {
-                player.displayClientMessage(Component.translatable("message.thither.door_sealed",
-                        destination.displayName()).withStyle(ChatFormatting.DARK_GRAY), true);
-            }
-            level.playSound(null, lowerPos, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, 0.7F, 0.7F);
-            return InteractionResult.CONSUME;
-        }
+        if (lowerState.getValue(LOCKED)) {} /*defeating the boss of the dimension will directly unlock the next door*/
 
         if (destination.implemented()) {
             if (DoorDimension.enterDestination(serverPlayer, destination)) {
